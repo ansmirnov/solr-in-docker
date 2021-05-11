@@ -56,7 +56,7 @@ COMMAND="solr-precreate gettingstarted"
 ** Run the Solr container
 
 #+BEGIN_SRC sh
-docker run -d --name $NAME -p "$PORTS" -v "$VOLUMES" $IMAGE:$TAG
+docker run -d --name $NAME -p "$PORTS" -v "$VOLUMES" $IMAGE:$TAG $COMMAND
 #+END_SRC
 
 ** Inspect the container
