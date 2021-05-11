@@ -7,6 +7,7 @@
   - [[#pull-the-docker-image][Pull the docker image]]
   - [[#set-the-data-directory][Set the data directory]]
   - [[#set-the-port-forwarding-rules][Set the port forwarding rules]]
+  - [[#run-the-solr-container][Run the Solr container]]
 
 ** Select the version of the docker image
 
@@ -39,3 +40,8 @@ VOLUMES="`pwd`/data:/var/solr"
 PORTS="127.0.0.1:8983:8983"
 #+END_SRC
 
+** Run the Solr container
+
+#+BEGIN_SRC sh
+docker run -d --name $NAME -p "$PORTS" -v "$VOLUMES" $IMAGE:$TAG
+#+END_SRC
