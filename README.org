@@ -6,6 +6,7 @@
   - [[#set-the-container-name][Set the container name]]
   - [[#pull-the-docker-image][Pull the docker image]]
   - [[#set-the-local-data-directory][Set the local data directory]]
+  - [[#set-the-port-forwarding-rules][Set the port forwarding rules]]
 
 ** Select the version of the docker image
 
@@ -30,5 +31,11 @@ docker pull $IMAGE:$TAG
 
 #+BEGIN_SRC sh
 LOCAL_DATA_DIR=`pwd`/data
+#+END_SRC
+
+** Set the port forwarding rules
+
+#+BEGIN_SRC sh
+PORTS="127.0.0.1:8983:8983"
 #+END_SRC
 
