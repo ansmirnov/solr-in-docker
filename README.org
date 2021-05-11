@@ -5,6 +5,7 @@
   - [[#select-the-version-of-the-docker-image][Select the version of the docker image]]
   - [[#set-the-container-name][Set the container name]]
   - [[#pull-the-docker-image][Pull the docker image]]
+  - [[#set-the-local-data-directory][Set the local data directory]]
 
 ** Select the version of the docker image
 
@@ -24,3 +25,10 @@ NAME=solr
 #+BEGIN_SRC sh
 docker pull $IMAGE:$TAG
 #+END_SRC
+
+** Set the local data directory
+
+#+BEGIN_SRC sh
+LOCAL_DATA_DIR=`pwd`/data
+#+END_SRC
+
