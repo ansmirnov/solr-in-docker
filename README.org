@@ -2,4 +2,11 @@
 #+PROPERTY: header-args :session *shell docker* :results silent raw
 
 ** Contents                                                           :TOC_3:
+  - [[#select-the-version-of-the-docker-image][Select the version of the docker image]]
 
+** Select the version of the docker image
+
+#+BEGIN_SRC sh
+IMAGE=solr
+TAG=8.8.2
+#+END_SRC
