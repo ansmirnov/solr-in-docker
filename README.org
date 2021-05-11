@@ -7,6 +7,7 @@
   - [[#pull-the-docker-image][Pull the docker image]]
   - [[#set-the-data-directory][Set the data directory]]
   - [[#set-the-port-forwarding-rules][Set the port forwarding rules]]
+  - [[#set-the-run-command][Set the run command]]
   - [[#run-the-solr-container][Run the Solr container]]
   - [[#inspect-the-container][Inspect the container]]
   - [[#see-the-container-logs][See the container logs]]
@@ -44,6 +45,12 @@ VOLUMES="`pwd`/data:/var/solr"
 
 #+BEGIN_SRC sh
 PORTS="127.0.0.1:8983:8983"
+#+END_SRC
+
+** Set the run command
+
+#+BEGIN_SRC sh
+COMMAND="solr-precreate gettingstarted"
 #+END_SRC
 
 ** Run the Solr container
