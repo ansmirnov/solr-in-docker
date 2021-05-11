@@ -4,6 +4,7 @@
 ** Contents                                                           :TOC_3:
   - [[#select-the-version-of-the-docker-image][Select the version of the docker image]]
   - [[#set-the-container-name][Set the container name]]
+  - [[#pull-the-docker-image][Pull the docker image]]
 
 ** Select the version of the docker image
 
@@ -16,4 +17,10 @@ TAG=8.8.2
 
 #+BEGIN_SRC sh
 NAME=solr
+#+END_SRC
+
+** Pull the docker image
+
+#+BEGIN_SRC sh
+docker pull $IMAGE:$TAG
 #+END_SRC
