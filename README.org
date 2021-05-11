@@ -13,6 +13,7 @@
   - [[#kill-the-container][Kill the container]]
   - [[#remove-the-container][Remove the container]]
   - [[#remove-the-data-directory][Remove the data directory]]
+  - [[#references][References]]
 
 ** Select the version of the docker image
 
@@ -80,3 +81,9 @@ docker rm $NAME
 #+BEGIN_SRC sh
 rm -rf data
 #+END_SRC
+
+** References
+
+1. https://hub.docker.com/_/solr/
+
+2. https://github.com/docker-solr/docker-solr/blob/master/README.md
