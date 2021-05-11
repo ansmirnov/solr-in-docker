@@ -1,0 +1,2 @@
+#+TITLE: Running Solr in Docker
+#+PROPERTY: header-args :session *shell docker* :results silent raw
