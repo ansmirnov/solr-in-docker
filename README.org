@@ -12,6 +12,7 @@
   - [[#see-the-container-logs][See the container logs]]
   - [[#kill-the-container][Kill the container]]
   - [[#remove-the-container][Remove the container]]
+  - [[#remove-the-data-directory][Remove the data directory]]
 
 ** Select the version of the docker image
 
@@ -74,3 +75,8 @@ docker kill $NAME
 docker rm $NAME
 #+END_SRC
 
+** Remove the data directory
+
+#+BEGIN_SRC sh
+rm -rf data
+#+END_SRC
